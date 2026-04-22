@@ -1,4 +1,4 @@
-# x-vc
+# X-VC
 
 [![arXiv](https://img.shields.io/badge/arXiv-2604.12456-b31b1b.svg)](https://arxiv.org/abs/2604.12456)
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-Model-fcd022?logo=huggingface&logoColor=000)](https://huggingface.co/chenxie95/X-VC)
@@ -14,14 +14,15 @@ Official code release for **X-VC: Zero-shot Streaming Voice Conversion in Codec 
 
 ```bash
 git clone https://github.com/Jerrister/X-VC.git
-cd x-vc
+cd X-VC
 ```
 
 ### 2. Create conda environment (Python 3.10) and install dependencies
 
 ```bash
-conda create -n xvc python=3.10
+conda create -n xvc python=3.10 -y
 conda activate xvc
+pip install -U pip
 pip install -r requirements.txt
 ```
 
@@ -91,7 +92,7 @@ This script reports:
 ### Step 1: Prepare pretrained dependencies
 
 Before training, prepare the required pretrained dependencies:
-- SAC pretrained checkpoint(s) (for model initialization): https://huggingface.co/Soul-AILab/SAC-16k-62_5Hz
+- [SAC pretrained checkpoint(s)](https://huggingface.co/Soul-AILab/SAC-16k-62_5Hz) (for model initialization)
 
 Then set corresponding paths in [`configs/xvc.yaml`](configs/xvc.yaml), especially:
 - `model.generator.checkpoint`
@@ -133,10 +134,12 @@ Training config points to JSONL files in `configs/xvc.yaml`:
 Each JSONL line should be a JSON object.
 
 Required fields:
-- `source_utt`
 - `target_utt`
 - `source_wav_path`
 - `target_wav_path`
+
+Optional field:
+- `source_utt`
 
 Minimal example:
 
@@ -144,26 +147,22 @@ Minimal example:
 {"source_utt":"utt_0001","source_wav_path":"<path_to_source>","target_utt":"utt_0002","target_wav_path":"<path_to_target>"}
 ```
 
-## TODO (Information/Materials to Add)
-
-- [ ] Add author list.
-- [ ] Add exact inference demo assets (`examples/source.wav`, `examples/target.wav`).
-- [ ] Add dataset preparation instructions (download, preprocessing, train/val split).
-- [ ] Add evaluation setup details (metrics, scripts, expected scores).
-- [ ] Add FAQ/troubleshooting (CUDA/DeepSpeed/torchaudio version issues).
-
-## Citation
-
-```bibtex
-@artical{zheng2026xvc,
-      title={X-VC: Zero-shot Streaming Voice Conversion in Codec Space}, 
-      author={Qixi Zheng and Yuxiang Zhao and Tianrui Wang and Wenxi Chen and Kele Xu and Yikang Li and Qinyuan Chen and Xipeng Qiu and Kai Yu and Xie Chen},
-      year={2026},
-      journal={arXiv preprint arXiv:2604.12456},
-}
-```
-
 ## Acknowledgements
 
 This codebase builds upon open-source components from [SAC](https://github.com/Soul-AILab/SAC) and the broader audio generation ecosystem.
-Please also check dependency licenses in this repository and upstream projects.
+
+## Citation
+
+If you find our work useful, please cite our work as:
+
+```bibtex
+@misc{zheng2026xvczeroshotstreamingvoice,
+      title={X-VC: Zero-shot Streaming Voice Conversion in Codec Space}, 
+      author={Qixi Zheng and Yuxiang Zhao and Tianrui Wang and Wenxi Chen and Kele Xu and Yikang Li and Qinyuan Chen and Xipeng Qiu and Kai Yu and Xie Chen},
+      year={2026},
+      eprint={2604.12456},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2604.12456},
+}
+```
