@@ -17,7 +17,7 @@ git clone https://github.com/Jerrister/X-VC.git
 cd X-VC
 ```
 
-### 2. Create conda environment (Python 3.10) and install dependencies
+### 2. Create conda environment and install dependencies
 
 ```bash
 conda create -n xvc python=3.10 -y
@@ -26,7 +26,7 @@ pip install -U pip
 pip install -r requirements.txt
 ```
 
-### 3. Prepare pretrained assets (for inference and training)
+### 3. Prepare pretrained models
 
 Prepare:
 - [GLM-4-Voice-Tokenizer](https://huggingface.co/zai-org/glm-4-voice-tokenizer) (for semantic tokenization)
@@ -63,7 +63,7 @@ Key arguments in this script:
 
 Outputs are saved under `save_dir` (default: `outputs/xvc_single`).
 
-### Batch Offline Inference (SeedTTS testset example)
+### Batch Offline Inference (SeedTTS-eval as example)
 
 Use [`scripts/batch_infer_seedtts_offline.sh`](scripts/batch_infer_seedtts_offline.sh).
 
