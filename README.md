@@ -3,10 +3,15 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2604.12456-b31b1b.svg)](https://arxiv.org/abs/2604.12456)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Model-FFD21E?logo=huggingface&logoColor=yellow)](https://huggingface.co/chenxie95/X-VC)
 [![Demo Page](https://img.shields.io/badge/Demo-Project%20Page-blue)](https://x-vc.github.io)
+[![Online Demo](https://img.shields.io/badge/Demo-Project%20Page-green)](https://x-vc.sjtuxlance.com)
 
 Official code release for **X-VC: Zero-shot Streaming Voice Conversion in Codec Space**.
 
 ![X-VC overview](figures/overview.png)
+
+## Online Demo
+
+You can go to our [online demo page](https://x-vc.sjtuxlance.com) and click "Start Streaming" to try our real-time voice conversion system. You can use the preset reference voices, or uploading it yourself. Please report if any issue is found.
 
 ## Environment Setup
 
