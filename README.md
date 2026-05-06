@@ -3,7 +3,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2604.12456-b31b1b.svg)](https://arxiv.org/abs/2604.12456)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Model-FFD21E?logo=huggingface&logoColor=yellow)](https://huggingface.co/chenxie95/X-VC)
 [![Demo Page](https://img.shields.io/badge/Demo-Project%20Page-blue)](https://x-vc.github.io)
-[![Online Demo](https://img.shields.io/badge/Demo-Project%20Page-green)](https://x-vc.sjtuxlance.com)
+[![Online Demo](https://img.shields.io/badge/Demo-Online%20Demo-green)](https://x-vc.sjtuxlance.com)
 
 Official code release for **X-VC: Zero-shot Streaming Voice Conversion in Codec Space**.
 
@@ -11,7 +11,9 @@ Official code release for **X-VC: Zero-shot Streaming Voice Conversion in Codec 
 
 ## Online Demo
 
-You may visit our [online demo page](https://x-vc.sjtuxlance.com) and click “Start Stream” to try our real-time voice conversion system. The demo supports both preset reference voices and user-uploaded reference audio. Please feel free to report any issues encountered during use.
+You may visit our real-time voice conversion system on the [online demo page](https://x-vc.sjtuxlance.com). First, choose a preset **target voice** or upload/record your own reference audio, then use the preview player to check the target voice. Click **Start Stream** to start real-time conversion. After speaking, click **Stop** to end the session; the saved input and converted output audio will appear in the **Saved Audio** section for playback. Please use headphones for a better experience, and report any issues you encounter.
+
+![Online Demo](figures/demo.png)
 
 ## Environment Setup
 
