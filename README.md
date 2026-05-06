@@ -11,7 +11,7 @@ Official code release for **X-VC: Zero-shot Streaming Voice Conversion in Codec 
 
 ## Online Demo
 
-You can go to our [online demo page](https://x-vc.sjtuxlance.com) and click "Start Streaming" to try our real-time voice conversion system. You can use the preset reference voices, or uploading it yourself. Please report if any issue is found.
+You may visit our [online demo page](https://x-vc.sjtuxlance.com) and click “Start Stream” to try our real-time voice conversion system. The demo supports both preset reference voices and user-uploaded reference audio. Please feel free to report any issues encountered during use.
 
 ## Environment Setup
 
